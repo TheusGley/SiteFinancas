@@ -1,15 +1,19 @@
 from dash import html, dcc
 import dash
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 from components import dashboards, sidebar ,extratos
 
 
-import app as app
+from app import app
 
-from app import *
+
+
+
+
 
 
 
@@ -54,3 +58,4 @@ def render_page(pathname):
 # debug true - a cada salvamento a alteracaoi no site e automatica|| false -a atualização do site manualmente
 if __name__ == '__main__':
     app.run_server(port=8051, debug=True)
+    

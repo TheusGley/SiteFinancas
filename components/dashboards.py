@@ -8,12 +8,13 @@ import plotly.express as px
 import plotly.graph_objects as go
 import calendar
 from globals import *
-from app import *
+from app import app
 
 
 
 # =========  Layout  =========== #
 layout = dbc.Col([
+    html.H2("Pagina do dashboard")
        
     ])
 
